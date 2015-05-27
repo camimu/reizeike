@@ -1,0 +1,73 @@
+//only display
+.only-mobile {
+  @include media-desktop {
+    display: none !important;
+  }
+}
+.only-desktop {
+  @include media-mobile {
+    display: none !important;
+  }
+}
+.hidden-phone {
+  @include media-phone {
+    display: none !important;
+  }
+}
+.hidden-tablet {
+  @include media-tablet {
+    display: none !important;
+  }
+}
+
+//header
+
+.wrapper {
+   @include media-desktop {
+   height: 800px;
+   table-layout: fixed;
+   display: table;
+   width: 100%;
+    header{
+        width: 420px;
+        height: 800px;
+        overflow: hidden;
+        background: url(../img/bg_header_01.jpg) no-repeat 0 0;
+        position: relative;
+        display: table-cell;
+        @include link-style(#222);
+        h1{
+          position: absolute;
+          top: 100px;
+          left: 50%;
+          width: 120px;
+          margin-left: -60px;
+          a{
+            @include text-image("../img/hd_logo_01.png", 120px, 306px);
+          }
+        }
+        nav {
+          position: absolute;
+          bottom: 80px;
+          width: 420px;      
+          ul {
+            li {
+              padding: 0 20px;
+              text-align: center;
+              letter-spacing: 3px;
+              margin-top: 20px;
+            }
+          }
+        }
+    }
+    .slider {
+      display: table-cell;
+      height: 800px;
+      overflow: hidden;
+      li {
+        img {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+//value
+$pc-width: 900px;
+@mixin link-style($color, $default:none, $hover:underline){
+  a{
+    &:link, &:visited{
+      color: $color;
+      text-decoration: $default;
+    }
+    @include media-desktop {
+      &:hover, &:active{
+        color: $color;
+        text-decoration: $hover;
+      }
+    }
+  }
+}
+
+//colorset
+@mixin colorset-category{
+  &.nisshi{ @include link-style(#e5a51c); color: #e5a51c; }
+  &.oshirase{ @include link-style(#51a8dd); color: #51a8dd; }
+  &.item{ @include link-style(#db4d6d); color: #db4d6d; }
+  &.other{ @include link-style(#000); color: #000; }
+}
+
+// breakpoint
+$desktop-l: 1170px;
+$tablet: 970px;
+$phone: 600px;
+
+@mixin media-desktop {
+  .device-desktop & {
+    @content;
+  }
+}
+@mixin media-mobile {
+  @media screen and (max-width: $tablet +1) {
+    @content;
+  }
+}
+@mixin media-tablet {
+  @media screen and (min-width: $phone +1) and (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin media-phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+@mixin media-orientation($orientation: portrait) {
+  @media screen and (orientation: $orientation) {
+    @content;
+  }
+}
+
+// clearfix
+@mixin clearfix {
+  // zoom: 1;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+/* opacity */
+@mixin opacity_self($v:0.6){
+  &:hover{
+    opacity: $v;
+    -ms-filter: "alpha(opacity=#{$v * 100})"; /* IE 8 */
+    filter:alpha(opacity=#{$v * 100}); /* IE lt 8 */
+  }
+}
+@mixin opacity($v:0.6){
+  &:hover{
+    img, &[type = "image"]{
+      opacity: $v;
+      -ms-filter: "alpha(opacity=#{$v * 100})"; /* IE 8 */
+      filter:alpha(opacity=#{$v * 100}); /* IE lt 8 */
+    }
+  }
+}
+
+// img_parts
+@mixin text-image($src, $width, $height, $repeat: no-repeat, $position: 0 0){
+  width: $width;
+  height: $height;
+  background: url($src) $repeat $position;
+  display: block;
+  text-indent: -9999px;
+}
+@mixin rollover($src, $width, $height, $repeat: no-repeat, $position: 0 0){
+  @include text-image($src, $width, $height, $repeat, $position);
+
+  &:hover{
+    background-position: 0 (-$height);
+  }
+}

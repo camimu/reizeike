@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  @include media-phone {
+    font-size: 14px;
+  }
+  @include media-tablet {
+    font-size: 14px;
+  }
+  @include media-desktop {
+    min-width: 970px;
+    font-size: 14px;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+  @include media-mobile {
+    max-width: 100%;
+  }
+}
