@@ -29,17 +29,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/img\/bg_header_01.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 55707,
-		"inputAbbreviatedPath": "\/assets\/img\/bg_header_01.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/bg_header_01.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/bnr_link_01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -194,6 +183,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/js\/_jquery.bxslider.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/_jquery.bxslider.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/_jquery.bxslider-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/html5shiv.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -222,6 +222,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.general.responsive.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.general.responsive-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/min\/jquery.bxslider-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/jquery.bxslider-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/jquery.bxslider-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

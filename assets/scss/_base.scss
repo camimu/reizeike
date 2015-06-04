@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #000;
-  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+  font-family:'Muli','Helvetica','Arial', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   -webkit-text-size-adjust: 100%;
   @include media-phone {
     font-size: 14px;
@@ -13,8 +13,9 @@ body {
     font-size: 14px;
   }
   @include media-desktop {
-    min-width: 970px;
+    min-width: 1000px;
     font-size: 14px;
+    text-align: center;
   }
 }
 
