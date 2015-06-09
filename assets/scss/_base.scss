@@ -1,11 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Marcellus);
+
 @charset "UTF-8";
 
 body {
   line-height: 1.5;
   background-color: #fff;
   color: #000;
-  font-family:'Muli','Helvetica','Arial', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family:'Helvetica','Arial', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
   @include media-phone {
     font-size: 14px;
   }
