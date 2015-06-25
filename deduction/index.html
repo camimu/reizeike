@@ -1,0 +1,222 @@
+<?php
+
+$ua = $_SERVER['HTTP_USER_AGENT'];
+
+$default_view = <<< EOT
+<!DOCTYPE html>
+<html lang="ja" class="device-desktop">
+<head>
+
+  <meta charset="UTF-8">
+  <title>寄附金控除について | 公益財団法人 冷泉家時雨亭文庫</title>
+  <meta name="description" content="財団法人「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に設立されました。">
+  <meta name="keywords" content="冷泉家,冷泉,冷泉家時雨亭文庫,時雨亭,和歌">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="">
+  <meta property="og:image" content="/assets/img/og/og.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/jquery.bxslider.css">
+
+  <!--[if lt IE 9]><script src="/assets/js/html5shiv.min.js"></script><![endif]-->
+  <script src="//typesquare.com/accessor/script/typesquare.js?W7M97tGC9VM%3D"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64356770-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class="contents-page">
+
+  <div class="container">
+
+    <div class="contents-header">
+      <header>
+        <div class="bg"></div>
+        <div class="logo">
+            <a href="/">
+              <h1>冷泉家時雨亭文庫</h1>
+              <h2>公益社団法人</h2>
+              <h3>The Reizei Family</h3>
+            </a>
+  		  </div>
+      </header>
+    </div>
+
+    <div class="form-contents">
+
+      <div class="lead-txt">
+        <h1>寄附金控除について</h1>
+        <h2 class="en">DEDUCTION</h2>
+      </div>
+
+      <div class="section">
+        <p>平成23年度の税制改正により、行政庁の証明を受けた公益社団法人・公益財団法人に対する個人の寄附金については新たに「税額控除」の仕組みが加わりました。当財団は平成25年12月6日付でその証明を受けました（平成30年12月5日まで）。</p>
+        <p>これにより、当財団に対する個人の方の寄附については、確定申告の際、「税額控除」と、従来の特定公益増進法人に対して寄附した場合に適用される「所得控除」の、いずれか一方の選択ができるようになりました。（この場合、通常、税額控除の方が控除される額が多くなりますが、総所得金額等により異なる場合がありますので各自で御確認下さい。）</p>
+        <p>また、法人様の寄附については、引き続き特定公益増進法人に対する寄附に適用される、別枠の損金算入をご利用いただくことができます。</p>
+        <p>※冷泉家時雨亭文庫会費も対象となります。</p>
+      </div>
+
+      <div class="section">  
+        <h3>個人寄附の場合（所得控除又は税額控除）</h3>
+        <p>その年の、対象団体に対して行った寄附合計額のうち 2,000円を超える金額につき適用されます。</p>
+        <div class="deduction">
+          <h2>所得控除適用の場合</h2>
+          <h3>寄附金額<span>※1</span> − 2,000円 ＝ 所得控除額</h3>
+          <p>確定申告時は、所得控除額が所得金額から差し引かれ、所得税額が算出されます。<span>※2</span></p>
+          <ul>
+            <li>※1 年間所得金額の40%に相当する額が限度額となります。</li>
+            <li>※2 所得税率は年間の所得金額によって異なります。所得税率は、<a href="http://www.nta.go.jp/taxanswer/shotoku/2260.htm" target="_blank">国税庁のホームページ</a>にてご確認ください。</li>
+        </div>
+        <div class="deduction">
+          <h2>税額控除適用の場合</h2>
+          <h3>（寄付金合計額<span>※3</span> − 2,000円）× 40％ ＝ 税額控除額<span>※4</span></h3>
+          <p>確定申告時は、税額控除額が所得税額から差し引かれます。</p>
+          <ul>
+            <li>※3 年間所得金額の40%に相当する額が限度額となります。</li>
+            <li>※4 控除額は、所得税額の25%が限度となります。</li>
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer>
+      <div class="inner">
+        <section class="info">
+          <p>当サイトに掲載のイラスト・写真・文章の無断転載を禁じます。<br>すべての著作権は公益財団法人冷泉家時雨亭文庫に帰属します。</p>
+          <h1>公益財団法人 冷泉家時雨亭文庫</h1>
+          <address>〒602-0893 <span class="only-phone"><br></span>京都市上京区今出川通烏丸東入玄武町五九九番地</address>
+        </section>
+        <section class="link">
+          <h1>関連機関リンク</h1>
+          <div><a href="http://www.kobunka.com/" target="_blank">公益財団法人 京都古文化保存協会</a></figure>
+        </section>
+      </div>
+    </footer>
+  
+    <div class="copyright">
+      <small>Copyright&copy;The Reizei Family All Rights Reserved.</small>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/assets/js/jquery.easing1.3.js"></script>
+  <script src="/assets/js/jquery.general.responsive.js"></script>
+  <script src="/assets/js/jquery.bxslider.min.js"></script>
+  <script src="/assets/js/jquery.inview.min.js"></script>
+  <script src="/assets/js/jquery.pjax.js"></script>
+  <script src="/assets/js/common.js"></script>  
+
+</body>
+</html>
+EOT;
+
+$ie_view = <<< EOT
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8">
+  <title>寄附金控除について | 公益財団法人 冷泉家時雨亭文庫</title>
+  <meta name="description" content="財団法人「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に設立されました。">
+  <meta name="keywords" content="冷泉家,冷泉,冷泉家時雨亭文庫,時雨亭,和歌">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="">
+  <meta property="og:image" content="/assets/img/og/og.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/ie.css">
+
+  <!--[if lt IE 9]><script src="/assets/js/html5shiv.min.js"></script><![endif]-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64356770-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class="contents-page">
+
+<div class="contents">
+
+  <div class="header">
+     <h1 class="logo"><a href="/"><img src="/assets/img/pc/hd_logo_01.png" alt="公益財団法人 冷泉家時雨亭文庫"></a></h1>
+     <div class="bg"></div>
+   </div>
+  
+  <div class="section" id="deduction">
+    <h2>寄附金控除について</h2>
+    <p class="en">DEDUCTION</h2>
+
+    <p>平成23年度の税制改正により、行政庁の証明を受けた公益社団法人・公益財団法人に対する個人の寄附金については新たに「税額控除」の仕組みが加わりました。当財団は平成25年12月6日付でその証明を受けました（平成30年12月5日まで）。</p>
+    <p>これにより、当財団に対する個人の方の寄附については、確定申告の際、「税額控除」と、従来の特定公益増進法人に対して寄附した場合に適用される「所得控除」の、いずれか一方の選択ができるようになりました。（この場合、通常、税額控除の方が控除される額が多くなりますが、総所得金額等により異なる場合がありますので各自で御確認下さい。）</p>
+    <p>また、法人様の寄附については、引き続き特定公益増進法人に対する寄附に適用される、別枠の損金算入をご利用いただくことができます。</p>
+    <p>※冷泉家時雨亭文庫会費も対象となります。</p>
+
+    <h3>個人寄附の場合（所得控除又は税額控除）</h3>
+    <p>その年の、対象団体に対して行った寄附合計額のうち 2,000円を超える金額につき適用されます。</p>
+    <div class="deduction">
+      <h2>所得控除適用の場合</h2>
+      <h3>寄附金額<span>※1</span> − 2,000円 ＝ 所得控除額</h3>
+      <p>確定申告時は、所得控除額が所得金額から差し引かれ、所得税額が算出されます。<span>※2</span></p>
+      <ul>
+        <li>※1 年間所得金額の40%に相当する額が限度額となります。</li>
+        <li>※2 所得税率は年間の所得金額によって異なります。所得税率は、<a href="http://www.nta.go.jp/taxanswer/shotoku/2260.htm" target="_blank">国税庁のホームページ</a>にてご確認ください。</li>
+    </div>
+    <div class="deduction">
+      <h2>税額控除適用の場合</h2>
+      <h3>（寄付金合計額<span>※3</span> − 2,000円）× 40％ ＝ 税額控除額<span>※4</span></h3>
+      <p>確定申告時は、税額控除額が所得税額から差し引かれます。</p>
+      <ul>
+        <li>※3 年間所得金額の40%に相当する額が限度額となります。</li>
+        <li>※4 控除額は、所得税額の25%が限度となります。</li>
+    </div>
+  </div>
+
+    <div class="footer">
+      <p>当サイトに掲載のイラスト・写真・文章の無断転載を禁じます。<br>すべての著作権は公益財団法人冷泉家時雨亭文庫に帰属します。</p>
+      <h1>公益財団法人 冷泉家時雨亭文庫</h1>
+      <address>〒602-0893 <span class="only-phone"><br></span>京都市上京区今出川通烏丸東入玄武町五九九番地</address>
+    </div>
+    <p class="copyright">Copyright&copy;The Reizei Family All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
+EOT;
+
+
+if( preg_match('/MSIE 6/', $ua) || preg_match('/MSIE 7/', $ua) || preg_match('/MSIE 8/', $ua)) {
+	print $ie_view;
+} else {
+	print $default_view;
+}
+
+?>

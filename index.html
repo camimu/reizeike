@@ -1,5 +1,10 @@
+<?php
+
+$ua = $_SERVER['HTTP_USER_AGENT'];
+
+$default_view = <<< EOT
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="device-desktop">
 <head>
 
   <meta charset="UTF-8">
@@ -10,40 +15,57 @@
   <meta property="og:title" content="">
   <meta property="og:description" content="">
   <meta property="og:url" content="">
-  <meta property="og:type" content="blog">
+  <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="">
-  <meta property="og:image" content="og.jpg">
+  <meta property="og:image" content="/assets/img/og/og.jpg">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
 
-  <link rel="shortcut icon" href="favicon.ico">
-
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/jquery.bxslider.css">
 
   <!--[if lt IE 9]><script src="/assets/js/html5shiv.min.js"></script><![endif]-->
   <script src="//typesquare.com/accessor/script/typesquare.js?W7M97tGC9VM%3D"></script>
-  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64356770-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 <body class="index-page">
 
 	<div class="opening">
-		  <div class="inner">
-  			<h1>冷泉家時雨亭文庫</h1>
-  			<h2>公益社団法人</h2>
-  			<h3><img src="/assets/img/hd_opening_03.png" alt="The Reizei Family"></h3>
-		  </div>
+    <div class="inner">
+    		<h1>冷泉家時雨亭文庫</h1>
+    		<h2>公益社団法人</h2>
+    		<h3>The Reizei Family</h3>
+    </div>
 	</div>
 
   <div class="container">
 
-    <div class="wrapper">
+    <div class="index-header hidden-phone">
       <header>
         <h1 class="logo">公益財団法人 冷泉家時雨亭文庫</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">冷泉家とは</a></li>
+            <li><a href="#summary">財団概要</a></li>
+            <li><a href="#greeting">理事長あいさつ</a></li>
+            <li><a href="#member">会員募集</a></li>
+            <li><a href="#donation">御寄附のお願い</a></li>
+            <li><a href="#books">関連書籍</a></li>
+          </ul>
+        </nav>
       </header>
       <div class="slider">
         <ul class="bxslider">
@@ -53,49 +75,67 @@
         </ul>
       </div>
     </div>
-    <div class="scroll">スクロールして御覧ください</div>
-  
-    <div class="contents">
 
+    <div class="global-m-nav only-phone">
+      <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <nav>
+          <ul>
+            <li><a href="#about">冷泉家とは</a></li>
+            <li><a href="#summary">財団概要</a></li>
+            <li><a href="#greeting">理事長あいさつ</a></li>
+            <li><a href="#member">会員募集</a></li>
+            <li><a href="#donation">御寄附のお願い</a></li>
+            <li><a href="#books">関連書籍</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="index-m-header only-phone">
       <header>
-        <div class="inner">
-      			<h1><img src="/assets/img/pc/hd_opening_01.png" alt="冷泉家時雨亭文庫"></h1>
-      			<h2><img src="/assets/img/pc/hd_opening_02.png" alt="公益社団法人"></h2>
-      			<h3><img src="/assets/img/pc/hd_opening_03.png" alt="The Reizei Family"></h3>
+        <div class="bg"></div>
+        <div class="logo">
+      			<h1>冷泉家時雨亭文庫</h1>
+      			<h2>公益社団法人</h2>
+      			<h3>The Reizei Family</h3>
   		  </div>
       </header>
+    </div>
 
-      <nav class="global-nav">
+    <div class="contents">
+
+      <nav class="global-nav hidden-phone">
         <ul>
-          <li><a href="#news">お知らせ</a></li>
           <li><a href="#about">冷泉家とは</a></li>
           <li><a href="#summary">財団概要</a></li>
           <li><a href="#greeting">理事長あいさつ</a></li>
           <li><a href="#member">会員募集</a></li>
+          <li><a href="#donation">御寄附のお願い</a></li>
           <li><a href="#books">関連書籍</a></li>
         </ul>
       </nav>
 
       <section class="news" id="news">
         <ul>
-          <li><time datatime="2014-07-08">2014年7月8日</time><a href="#">平成26年度の情報を更新しました。</a></li>
-          <li><time datatime="2014-06-04">2014年6月4日</time><a href="#">平成26年8月8日（金）に乞巧奠（きっこうてん）を開催します。</a><em>（終了しました）</em></li>
-          <li><time datatime="2014-07-08">2014年7月8日</time><a href="#">平成26年度の情報を更新しました。</a></li>
         </ul>
       </section>
     
       <section class="about" id="about">
+       <div class="pic hidden-phone">
+         <figure><img src="/assets/img/pc/pic_about_01.jpg" alt="冷泉家とは"></figure>
+       </div>
         <div class="text">
           <p class="num">01</p>
           <h1>冷泉家とは</h1>
           <h2 class="en">ABOUT REIZEIKE</h2>
+          <figure class="only-phone"><img src="/assets/img/sp/pic_about_01.jpg" alt="財団概要"></figure>
           <p>冷泉家住宅は、完全な姿で現存する唯一の公家屋敷です。京都御所周辺の旧公家町に近世初頭以来の土地を守り、寛政２年に再建された建物と、その配置構成は旧制を忠実に伝えた貴重な遺構として知られています。</p>
           <p>冷泉家伝来の典籍及び古文書類は、長家、俊成、定家以来の家学である和歌に関するものを中心に、数万点にのぼります。中世から近世にかけて、その時代の公家や武家の手で書き写されて流布したものも多く、伝統文化の継承と新しい文化の形成に重要な役割を果してきました。</p>
           <p>冷泉流歌道と関連諸行事は、宮廷生活の伝統文化を今に伝えるもので、この継承保存は有形、無形の高い価値をもっています。</p>
           <p>財団法人「冷泉家時雨亭文庫」は、以上の貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に、昭和56年４月に設立されました。</p>
-       </div>
-       <div class="pic">
-         <figure><img src="/assets/img/pc/pic_about_01.jpg" alt="冷泉家とは"></figure>
        </div>
       </section>
     
@@ -104,6 +144,7 @@
           <p class="num">02</p>
           <h1>財団概要</h1>
           <h2 class="en">FOUNDATION OVERVIEW</h2>
+          <figure class="only-phone"><img src="/assets/img/sp/pic_summary_01.jpg" alt="冷泉家とは"></figure>
           <section>
            <h3>名称</h3>
            <div class="content"><p>公益財団法人 冷泉家時雨亭文庫</p></div>
@@ -142,27 +183,30 @@
           <section>
            <h3>情報公開</h3>
            <div class="content">
-             <p><a href="#">定款（PDF,32KB）</a><br><a href="#">役員名簿（PDF,56KB）</a><br><a href="#">貸借対照表</a></p>
-             <aside><p><a href="#">Adobe Readerはこちらからダウンロードしていただけます。</a></p></aside>
+             <p><a href="/assets/pdf/201107_t.pdf" target="_blank">定款（PDF,32KB）<i class="fa fa-file-pdf-o"></i></a><br><a href="/assets/pdf/201306_y.pdf" target="_blank">役員名簿（PDF,56KB）<i class="fa fa-file-pdf-o"></i></a><br><a href="/summary/bs.html">貸借対照表</a></p>
+             <aside><p><a href="https://get.adobe.com/jp/reader/" target="_blank">Adobe Readerはこちらからダウンロードしていただけます。</a></p></aside>
            </div>
           </section>
        </div>
-       <div class="pic">
+       <div class="pic hidden-phone">
          <figure><img src="/assets/img/pc/pic_summary_01.jpg" alt="財団概要"></figure>
        </div>
       </section>
     
       <section class="greeting" id="greeting">
+       <div class="pic hidden-phone">
+         <h1>理事長 冷泉為人</h1><p>理事長 冷泉為人</p>
+       </div>
         <div class="text">
           <p class="num">03</p>
           <h1>理事長あいさつ</h1>
           <h2 class="en">PRESIDENT GREETINGS</h2>
+          <div class="pic only-phone">
+            <h1>理事長 冷泉為人</h1><p>理事長 冷泉為人</p>
+          </div>
           <p>冷泉家は平安、鎌倉の歌聖と仰がれた藤原俊成、定家父子を祖先に持つ「和歌の家」であります。冷泉家に伝来する典籍類は、俊成、定家以来八百年の歳月を経て現在に伝えられ、国宝５件、重要文化財47件を始め、その数は数万点に及びます。また重要文化財冷泉家住宅は、公家屋敷として現存する唯一の遺構となっております。さらに「歌の家」として和歌会、年中行事を今に守り伝えております。</p>
           <p>幾多の混乱を乗り越えた典籍類、完全な姿で残る公家屋敷、その中で営まれてきた歌会や年中行事、これらの文化遺産を将来にわたり総合的、かつ恒久的に継承保存していくことを目的に昭和56年（1981）４月に設立されたのが、「財団法人冷泉家時雨亭文庫」です。当財団は平成23年４月に公益財団法人となりました。</p>
           <p>財団設立以来、皆様の温かいご支援を頂き、これまで冷泉家住宅の解体修理や定家の日記『明月記』60巻（国宝）等の修理修復を行ってまいりました。また『冷泉家時雨亭叢書』を刊行し、これまで受け継いできた貴重な典籍類を公刊、全84巻が完結いたしました。<br>今後さらなる伝統文化の振興、発展に寄与していくことを切に願っております。今後も当財団へのご支援を賜りますよう切にお願い申し上げます。</p>
-       </div>
-       <div class="pic">
-         <figure><img src="/assets/img/pc/pic_greeting_01.jpg" alt="理事長 冷泉為人"><figcaption>理事長 冷泉為人</figcaption></figure>
        </div>
       </section>
     
@@ -174,7 +218,7 @@
           <p>「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に、昭和56年4月に財団法人として設立され、平成23年4月に公益財団法人へと移行しました。</p>
           <p>当文庫では、上記の目的を追求し、伝統文化の振興、発展に寄与していくため、広く一般の皆様の御理解を得ることが必要と考え、ここに「冷泉家時雨亭文庫」会員を下記の要項により募ることとなりました。つきましては、当文庫の趣旨に御賛同いただき、御後援賜らんことを切にお願い申し上げます。</p>
           <p>なお、御協力いただいた資金は、典籍・古文書の修理、建造物の修理等の一部に充当いたします。</p>
-          <section class="contents">
+          <section>
             <h2>公益財団法人冷泉家時雨亭文庫会員について</h2>
             <p>一、文庫の目的を御理解いただき、御賛同くださる個人または団体を会員とします。</p>
             <p>一、会員は、正会員、特別会員、賛助会員があります。それぞれ次の会費を納入してください。会費は何口でも結構です。</p>
@@ -185,45 +229,88 @@
             </ul>
             <p>一、会員には、文庫のニュースを記載した機関紙「志くれてい」を年四回発行します。</p>
             <p>一、会員には、文庫の主催する行事等を御案内することがあります。</p>
-          </section>      
-          <p class="btn"><a href="#"><span>入会を希望される方はこちら</span></a></p>
+            <p><a href="/deduction/">※冷泉家時雨亭文庫会費は寄附金控除の対象となります。</a></p>
+          </section>
+          <p class="btn"><a href="/member/" onClick="ga('send', 'event',  '冷泉家時雨亭文庫会員', 'click', '入会希望ボタン');"><i class="fa fa-angle-right fa-fw"></i>入会を希望される方はこちら</a></p>
        </div>
-       <div class="pic">
+       <div class="pic hidden-phone">
          <ul>
            <li><figure><img src="/assets/img/pc/pic_member_01.jpg" alt="会員募集"></figure></li>
            <li><figure><img src="/assets/img/pc/pic_member_02.jpg" alt="機関紙「志くれてい」"><figcaption>機関紙「志くれてい」</figcaption></figure></li>
          </ul>
        </div>
       </section>
-    
+
+      <section class="donation" id="donation">
+        <div class="text">
+          <p class="num">05</p>
+          <h1>御寄附のお願い</h1>
+          <h2 class="en">DONATION</h2>
+          <p>冷泉家時雨亭文庫は、冷泉家に伝わる有形・無形の文化財を継承保存・公開普及を図るための事業を実施しています。（詳しくは「<a href="#about">冷泉家とは</a>」「<a href="#summary">財団概要</a>」を御参照ください。）</p>
+          <p>これらの事業には膨大な資金が必要となるため、当財団では、広く一般の皆様にも御寄附を募っています。<br>当財団の活動事業に御理解、御賛同をいただき、是非御協力下さいますようお願い申し上げます。皆様からの寄附金は、典籍・古文書の修理、建物の修理等の一部に充当し、有効に使用させていただきます。</p>
+          <p>なお、公益財団法人への寄附金には、税法上の優遇措置が適用され、所得税(個人)、法人税(法人)の控除が受けられます。また、当財団は、税額控除に係る証明を取得していますので、個人の方の寄附については前記（所得控除）とのいずれか一方を選択いただくことができます。<br>詳しくは「<a href="/deduction/">寄附金控除について</a>」を御覧下さい。</p>
+          <section class="contents">
+            <dl>
+              <dt>郵便振替を御利用の場合</dt>
+              <dd>
+                <ol>
+                  <li>事務局に御連絡下さい（電話・郵便）。折り返し、払込用紙を郵送します。</li>
+                  <li>郵便局に備え付けの払込用紙にて、通信欄に「寄附金として」と御記入の上、住所・氏名・電話番号等をお書き添えいただき、お振込下さい。恐れ入りますが、振込手数料は御負担下さい。<br>加入者名：公益財団法人冷泉家時雨亭文庫<br>郵便振替口座：01010-3-42772</li>
+                </ol>
+              </dd>
+            </dl>
+            <dl>
+              <dt>銀行振込を御利用の場合</dt>
+              <dd>
+                <ol>
+                  <li>事務局に御連絡下さい。折り返し、振込先等を連絡します。</li>
+                </ol>
+              </dd>
+            </dl>
+          </section>
+          <div>
+            <h3>受領証明書の郵送</h3>
+            <div class="content"><p>寄附金の入金を確認後、「寄附金受領証明書」を郵送します。<br>本寄附は、所得税法78条および法人税法37条4項該当の寄附金控除の対象となりますので、大切に保管してください。</p></div>
+            <h3>寄附金控除の申告</h3>
+            <div class="content"><p>「寄附金受領証明書」等の書類を添付し、確定申告書をする必要があります。なお、税制は都度変更されていますので、申告の詳細についてはお近くの税務署にお問い合わせください。</p></div>
+            <h3>お問い合わせ・お申込み先</h3>
+            <div class="content"><p>公益財団法人冷泉家時雨亭文庫 事務局<br>電話　075-241-4322<br>住所　〒602-0893 京都市上京区今出川通烏丸東入玄武町五九九番地</p></div>
+          </div>
+       </div>
+      </section>
+
       <section class="books" id="books">
         <h1>関連書籍</h1>
         <h2 class="en">BOOKS</h2>
-        <section class="book">
-          <figure><a href="http://www.amazon.co.jp/dp/4087207048" target="_blank"><img src="/assets/img/pc/pic_book_01.jpg" alt="冷泉家 八〇〇年の「守る力」　冷泉 貴実子（著）"></a></figure>
-          <h2><a href="http://www.amazon.co.jp/dp/4087207048" target="_blank">冷泉家 八〇〇年の「守る力」</a></h2>
+        <div class="raw raw01">
+        <section class="book book01">
+          <div><a href="http://www.amazon.co.jp/dp/4087207048" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '冷泉家 八〇〇年の「守る力」');">冷泉家 八〇〇年の「守る力」　冷泉 貴実子（著）</a></div>
+          <h2><a href="http://www.amazon.co.jp/dp/4087207048" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '冷泉家 八〇〇年の「守る力」');">冷泉家 八〇〇年の「守る力」</a></h2>
           <h3>冷泉 貴実子（著）</h3>
           <p>「相変わらず」で伝えてきた冷泉家のあれこれを、やさしい文章で記す。新書なので読みやすい。</p>
         </section>
-        <section class="book">
-          <figure><a href="http://www.amazon.co.jp/dp/490131419X" target="_blank"><img src="/assets/img/pc/pic_book_02.jpg" alt="花もみぢ―冷泉家と京都　冷泉 貴実子（著）"></a></figure>
-          <h2><a href="http://www.amazon.co.jp/dp/490131419X" target="_blank">花もみぢ―冷泉家と京都</a></h2>
+        <section class="book book02">
+          <div><a href="http://www.amazon.co.jp/dp/490131419X" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '花もみぢ');">花もみぢ―冷泉家と京都　冷泉 貴実子（著）</a></div>
+          <h2><a href="http://www.amazon.co.jp/dp/490131419X" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '花もみぢ');">花もみぢ―冷泉家と京都</a></h2>
           <h3>冷泉 貴実子（著）</h3>
           <p>冷泉貴実子が冷泉家時雨亭叢書の月報に掲載した随筆を中心にまとめたエッセイ集。約五十話を収録。ハードカバー。</p>
         </section>
-        <section class="book">
-          <figure><a href="http://www.amazon.co.jp/dp/4140911417" target="_blank"><img src="/assets/img/pc/pic_book_03.jpg" alt="冷泉家・蔵番ものがたり―「和歌の家」千年をひもとく　冷泉 為人（著）"></a></figure>
-          <h2><a href="http://www.amazon.co.jp/dp/4140911417" target="_blank">冷泉家・蔵番ものがたり―「和歌の家」千年をひもとく</a></h2>
+        </div>
+        <div class="raw raw02">
+        <section class="book book03">
+          <div><a href="http://www.amazon.co.jp/dp/4140911417" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '冷泉家・蔵番ものがたり');">冷泉家・蔵番ものがたり―「和歌の家」千年をひもとく　冷泉 為人（著）</a></div>
+          <h2><a href="http://www.amazon.co.jp/dp/4140911417" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '冷泉家・蔵番ものがたり');">冷泉家・蔵番ものがたり―「和歌の家」千年をひもとく</a></h2>
           <h3>冷泉 為人（著）</h3>
           <p>冷泉家の歴史、所蔵品、年中行事等を網羅しており、冷泉家の全てが分かる。読み応えがある文章量。</p>
         </section>
-        <section class="book">
-          <figure><a href="http://www.amazon.co.jp/dp/4763805681" target="_blank"><img src="/assets/img/pc/pic_book_04.jpg" alt="冷泉家歌ごよみ―京の八百歳　冷泉 貴実子（著）"></a></figure>
-          <h2><a href="http://www.amazon.co.jp/dp/4763805681" target="_blank">冷泉家歌ごよみ―京の八百歳</a></h2>
+        <section class="book book04">
+          <div><a href="http://www.amazon.co.jp/dp/4763805681" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '冷泉家歌ごよみ');">冷泉家歌ごよみ―京の八百歳　冷泉 貴実子（著）</a></div>
+          <h2><a href="http://www.amazon.co.jp/dp/4763805681" target="_blank" onClick="ga('send', 'event',  '関連書籍', 'click', '冷泉家歌ごよみ');">冷泉家歌ごよみ―京の八百歳</a></h2>
           <h3>冷泉 貴実子（著）</h3>
           <p>京都新聞の連載をまとめたもの。正月から歳末までの年中行事に、季節の和歌を添えている。カラー写真も美しい。</p>
         </section>
       </section>
+      </div>
  
     </div>
 
@@ -232,17 +319,17 @@
         <section class="info">
           <p>当サイトに掲載のイラスト・写真・文章の無断転載を禁じます。<br>すべての著作権は公益財団法人冷泉家時雨亭文庫に帰属します。</p>
           <h1>公益財団法人 冷泉家時雨亭文庫</h1>
-          <address>〒602-0893 京都市上京区今出川通烏丸東入玄武町五九九番地</address>
+          <address>〒602-0893 <span class="only-phone"><br></span>京都市上京区今出川通烏丸東入玄武町五九九番地</address>
         </section>
         <section class="link">
           <h1>関連機関リンク</h1>
-          <figure><a href="http://www.kobunka.com/" target="_blank"><img src="/assets/img/pc/bnr_link_01.jpg"></a></figure>
+          <div><a href="http://www.kobunka.com/" target="_blank">公益財団法人 京都古文化保存協会</a></figure>
         </section>
       </div>
-    </footer>    
+    </footer>
   
     <div class="copyright">
-      <small>Copyright©The Reizei Family All Rights Reserved.</small>
+      <small>Copyright&copy;The Reizei Family All Rights Reserved.</small>
     </div>
 
   </div>
@@ -251,8 +338,203 @@
   <script src="/assets/js/jquery.easing1.3.js"></script>
   <script src="/assets/js/jquery.general.responsive.js"></script>
   <script src="/assets/js/jquery.bxslider.min.js"></script>
+  <script src="/assets/js/jquery.inview.min.js"></script>
   <script src="/assets/js/common.js"></script>
   <script src="/assets/js/index.js"></script>
 
 </body>
 </html>
+EOT;
+
+$ie_view = <<< EOT
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8">
+  <title>公益財団法人 冷泉家時雨亭文庫</title>
+  <meta name="description" content="財団法人「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に設立されました。">
+  <meta name="keywords" content="冷泉家,冷泉,冷泉家時雨亭文庫,時雨亭,和歌">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="">
+  <meta property="og:image" content="/assets/img/og/og.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/ie.css">
+
+  <!--[if lt IE 9]><script src="/assets/js/html5shiv.min.js"></script><![endif]-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64356770-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class="index-page">
+
+<div class="contents">
+
+  <div class="header">
+     <h1 class="logo"><img src="/assets/img/pc/hd_logo_01.png" alt="公益財団法人 冷泉家時雨亭文庫"></h1>
+     <div class="bg"></div>
+   </div>
+  
+  <div class="section about" id="about">
+    <h2>冷泉家とは</h2>
+    <p class="en">ABOUT</h2>
+    <p>冷泉家住宅は、完全な姿で現存する唯一の公家屋敷です。京都御所周辺の旧公家町に近世初頭以来の土地を守り、寛政２年に再建された建物と、その配置構成は旧制を忠実に伝えた貴重な遺構として知られています。</p>
+    <p>冷泉家伝来の典籍及び古文書類は、長家、俊成、定家以来の家学である和歌に関するものを中心に、数万点にのぼります。中世から近世にかけて、その時代の公家や武家の手で書き写されて流布したものも多く、伝統文化の継承と新しい文化の形成に重要な役割を果してきました。</p>
+    <p>冷泉流歌道と関連諸行事は、宮廷生活の伝統文化を今に伝えるもので、この継承保存は有形、無形の高い価値をもっています。</p>
+    <p>財団法人「冷泉家時雨亭文庫」は、以上の貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に、昭和56年４月に設立されました。</p>
+  </div>
+  
+  <div class="section summary" id="summary">
+    <h2>財団概要</h2>
+    <p class="en">SUMMARY</h2>
+    <table>
+      <tr>
+        <th>名称</th>
+        <td>公益財団法人 冷泉家時雨亭文庫</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒602-0893<br>京都市上京区今出川通烏丸東入玄武町599番地</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td>075-241-4322</td>
+      </tr>
+      <tr>
+        <th>設立年月日</th>
+        <td>昭和56年4月1日</td>
+      </tr>
+      <tr>
+        <th>代表者名</th>
+        <td>理事長 冷泉為人</td>
+      </tr>
+      <tr>
+        <th>目的</th>
+        <td>冷泉家の建物及びその環境並びに冷泉家伝来の典籍及び古文書類の保存及び活用を図るとともに、冷泉流歌道と関連諸行事を継承保存し、公開し及び普及を行い、地域の伝統文化の振興、学術文化の発展に寄与する</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>
+          <ol>
+            <li>冷泉家住宅及びその環境の保存及び公開</li>
+            <li>冷泉家伝来の典籍及び古文書類の保存、公開、調査研究及び研究成果等の公開</li>
+            <li>冷泉流歌道と関連諸行事の継承保存、公開及び普及</li>
+            <li>その他この法人の目的を達成するために必要な事業</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <th>情報公開</th>
+        <td>
+          <ul>
+            <li><a href="/assets/pdf/201107_t.pdf" target="_blank">定款（PDF,32KB）</a></li>
+            <li><a href="/assets/pdf/201306_y.pdf" target="_blank">役員名簿（PDF,56KB）</a></li>
+          </ul>
+          <h3>貸借対照表</h3>
+          <ul>
+            <li><a href="/assets/pdf/201507_k.pdf" target="_blank">平成26年度（PDF,37KB）</a></li>
+            <li><a href="/assets/pdf/201407_k.pdf" target="_blank">平成25年度（PDF,14KB）</a></li>
+            <li><a href="/assets/pdf/201307_k.pdf" target="_blank">平成24年度（PDF,160KB）</a></li>
+            <li><a href="/assets/pdf/201207_k.pdf" target="_blank">平成23年度（PDF,146KB）</a></li>
+            <li><a href="/assets/pdf/201107_k.pdf" target="_blank">平成22年度（PDF,32KB）</a></li>
+          </ul>
+          <p><a href="https://get.adobe.com/jp/reader/" target="_blank">Adobe Readerはこちらからダウンロードしていただけます。</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="section greeting" id="greeting">
+    <h2>理事長あいさつ</h2>
+    <p class="en">GREETING</h2>
+    <p>冷泉家は平安、鎌倉の歌聖と仰がれた藤原俊成、定家父子を祖先に持つ「和歌の家」であります。冷泉家に伝来する典籍類は、俊成、定家以来八百年の歳月を経て現在に伝えられ、国宝５件、重要文化財47件を始め、その数は数万点に及びます。また重要文化財冷泉家住宅は、公家屋敷として現存する唯一の遺構となっております。さらに「歌の家」として和歌会、年中行事を今に守り伝えております。</p>
+    <p>幾多の混乱を乗り越えた典籍類、完全な姿で残る公家屋敷、その中で営まれてきた歌会や年中行事、これらの文化遺産を将来にわたり総合的、かつ恒久的に継承保存していくことを目的に昭和56年（1981）４月に設立されたのが、「財団法人冷泉家時雨亭文庫」です。当財団は平成23年４月に公益財団法人となりました。</p>
+    <p>財団設立以来、皆様の温かいご支援を頂き、これまで冷泉家住宅の解体修理や定家の日記『明月記』60巻（国宝）等の修理修復を行ってまいりました。また『冷泉家時雨亭叢書』を刊行し、これまで受け継いできた貴重な典籍類を公刊、全84巻が完結いたしました。<br>今後さらなる伝統文化の振興、発展に寄与していくことを切に願っております。今後も当財団へのご支援を賜りますよう切にお願い申し上げます。</p>
+    <h3>理事長 冷泉為人</h3>
+  </div>
+  
+  <div class="section member" id="member">
+    <h2>会員募集</h2>
+    <p class="en">MEMBERS</h2>
+    <p>「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に、昭和56年4月に財団法人として設立され、平成23年4月に公益財団法人へと移行しました。</p>
+    <p>当文庫では、上記の目的を追求し、伝統文化の振興、発展に寄与していくため、広く一般の皆様の御理解を得ることが必要と考え、ここに「冷泉家時雨亭文庫」会員を下記の要項により募ることとなりました。つきましては、当文庫の趣旨に御賛同いただき、御後援賜らんことを切にお願い申し上げます。</p>
+    <p>なお、御協力いただいた資金は、典籍・古文書の修理、建造物の修理等の一部に充当いたします。</p>
+    <h3>公益財団法人冷泉家時雨亭文庫会員について</h3>
+    <p>一、文庫の目的を御理解いただき、御賛同くださる個人または団体を会員とします。</p>
+    <p>一、会員は、正会員、特別会員、賛助会員があります。それぞれ次の会費を納入してください。会費は何口でも結構です。</p>
+    <ul>
+      <li>正会員：毎年一口　一万円</li>
+      <li>特別会員：毎年一口　五万円</li>
+      <li>賛助会員：毎年一口　十万円</li>
+    </ul>
+    <p>一、会員には、文庫のニュースを記載した機関紙「志くれてい」を年四回発行します。</p>
+    <p>一、会員には、文庫の主催する行事等を御案内することがあります。</p>
+    <p><a href="/deduction/">※冷泉家時雨亭文庫会費は寄附金控除の対象となります。</a></p>
+    <p class="btn"><a href="mailto:member@reizeike.jp?subject=冷泉家時雨亭文庫会員のお申し込み&amp;body=お名前：%0d%0a%0d%0a郵便番号：%0d%0a%0d%0a都道府県：%0d%0a%0d%0aご住所：%0d%0a%0d%0a電話番号：" onClick="ga('send', 'event',  '冷泉家時雨亭文庫会員', 'click', '入会希望ボタン');">入会を希望される方はこちら</a></p>
+   </div>
+  
+  <div class="section donation" id="donation">
+      <h2>御寄附のお願い</h2>
+    <p class="en">DONATION</h2>
+      <p>冷泉家時雨亭文庫は、冷泉家に伝わる有形・無形の文化財を継承保存・公開普及を図るための事業を実施しています。（詳しくは「<a href="#about">冷泉家とは</a>」「<a href="#summary">財団概要</a>」を御参照ください。）</p>
+      <p>これらの事業には膨大な資金が必要となるため、当財団では、広く一般の皆様にも御寄附を募っています。<br>当財団の活動事業に御理解、御賛同をいただき、是非御協力下さいますようお願い申し上げます。皆様からの寄附金は、典籍・古文書の修理、建物の修理等の一部に充当し、有効に使用させていただきます。</p>
+      <p>なお、公益財団法人への寄附金には、税法上の優遇措置が適用され、所得税(個人)、法人税(法人)の控除が受けられます。また、当財団は、税額控除に係る証明を取得していますので、個人の方の寄附については前記（所得控除）とのいずれか一方を選択いただくことができます。<br>詳しくは「<a href="/deduction/">寄附金控除について</a>」を御覧下さい。</p>
+      <dl>
+        <dt>郵便振替を御利用の場合</dt>
+        <dd>
+          <ol>
+            <li>事務局に御連絡下さい（電話・郵便）。折り返し、払込用紙を郵送します。</li>
+            <li>郵便局に備え付けの払込用紙にて、通信欄に「寄附金として」と御記入の上、住所・氏名・電話番号等をお書き添えいただき、お振込下さい。恐れ入りますが、振込手数料は御負担下さい。<br>加入者名：公益財団法人冷泉家時雨亭文庫<br>郵便振替口座：01010-3-42772</li>
+          </ol>
+        </dd>
+      </dl>
+      <dl>
+        <dt>銀行振込を御利用の場合</dt>
+        <dd>
+          <ol>
+            <li>事務局に御連絡下さい。折り返し、振込先等を連絡します。</li>
+          </ol>
+        </dd>
+      </dl>
+      <h3>受領証明書の郵送</h3>
+      <p>寄附金の入金を確認後、「寄附金受領証明書」を郵送します。<br>本寄附は、所得税法78条および法人税法37条4項該当の寄附金控除の対象となりますので、大切に保管してください。</p>
+      <h3>寄附金控除の申告</h3>
+      <p>「寄附金受領証明書」等の書類を添付し、確定申告書をする必要があります。なお、税制は都度変更されていますので、申告の詳細についてはお近くの税務署にお問い合わせください。</p>
+      <h3>お問い合わせ・お申込み先</h3>
+      <p>公益財団法人冷泉家時雨亭文庫 事務局<br>電話　075-241-4322<br>住所　〒602-0893 京都市上京区今出川通烏丸東入玄武町五九九番地</p>
+   </div>
+  
+    <div class="footer">
+      <p>当サイトに掲載のイラスト・写真・文章の無断転載を禁じます。<br>すべての著作権は公益財団法人冷泉家時雨亭文庫に帰属します。</p>
+      <h1>公益財団法人 冷泉家時雨亭文庫</h1>
+      <address>〒602-0893 <span class="only-phone"><br></span>京都市上京区今出川通烏丸東入玄武町五九九番地</address>
+    </div>
+    <p class="copyright">Copyright&copy;The Reizei Family All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
+EOT;
+
+
+if( preg_match('/MSIE 6/', $ua) || preg_match('/MSIE 7/', $ua) || preg_match('/MSIE 8/', $ua)) {
+	print $ie_view;
+} else {
+	print $default_view;
+}
+
+?>
