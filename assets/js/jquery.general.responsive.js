@@ -7,7 +7,6 @@
  * Licensed under the MIT license: http://www.opensource.org/licenses/MIT
 */
 
-
 (function() {
   var $, $window, NarrowWideEvent, POINT, ResponsiveImage, WindowSizeWatch, appVersion, userAgent, w;
 

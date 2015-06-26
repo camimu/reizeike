@@ -62,9 +62,11 @@ $head = <<< EOT
       <header>
         <div class="bg"></div>
         <div class="logo">
-      			<h1>冷泉家時雨亭文庫</h1>
-      			<h2>公益社団法人</h2>
-      			<h3>The Reizei Family</h3>
+          <a href="/">
+        			<h1>冷泉家時雨亭文庫</h1>
+        			<h2>公益社団法人</h2>
+        			<h3>The Reizei Family</h3>
+      			</a>
   		  </div>
       </header>
     </div>
@@ -201,12 +203,12 @@ $foot = <<< EOT
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="/assets/js/jquery.easing1.3.js"></script>
-  <script src="/assets/js/jquery.general.responsive.js"></script>
-  <script src="/assets/js/jquery.bxslider.min.js"></script>
-  <script src="/assets/js/jquery.inview.min.js"></script>
-  <script src="/assets/js/jquery.pjax.js"></script>
-  <script src="/assets/js/common.js"></script>  
+  <script src="/assets/js/min/jquery.easing1.3-min.js"></script>
+  <script src="/assets/js/min/jquery.general.responsive-min.js"></script>
+  <script src="/assets/js/min/jquery.bxslider.min.js"></script>
+  <script src="/assets/js/min/jquery.inview.min.js"></script>
+  <script src="/assets/js/min/common-min.js"></script>
+  <script src="/assets/js/min/index-min.js"></script>
 
 </body>
 </html>
@@ -252,9 +254,11 @@ $postPreview = <<< EOT
       <header>
         <div class="bg"></div>
         <div class="logo">
-      			<h1>冷泉家時雨亭文庫</h1>
-      			<h2>公益社団法人</h2>
-      			<h3>The Reizei Family</h3>
+          <a href="/">
+        			<h1>冷泉家時雨亭文庫</h1>
+        			<h2>公益社団法人</h2>
+        			<h3>The Reizei Family</h3>
+      			</a>
   		  </div>
       </header>
     </div>
@@ -325,12 +329,12 @@ $postPreview = <<< EOT
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="/assets/js/jquery.easing1.3.js"></script>
-  <script src="/assets/js/jquery.general.responsive.js"></script>
-  <script src="/assets/js/jquery.bxslider.min.js"></script>
-  <script src="/assets/js/jquery.inview.min.js"></script>
-  <script src="/assets/js/jquery.pjax.js"></script>
-  <script src="/assets/js/common.js"></script>  
+  <script src="/assets/js/min/jquery.easing1.3-min.js"></script>
+  <script src="/assets/js/min/jquery.general.responsive-min.js"></script>
+  <script src="/assets/js/min/jquery.bxslider.min.js"></script>
+  <script src="/assets/js/min/jquery.inview.min.js"></script>
+  <script src="/assets/js/min/common-min.js"></script>
+  <script src="/assets/js/min/index-min.js"></script>
 
 </body>
 </html>
@@ -380,9 +384,11 @@ $thanksMsg = <<< EOT
       <header>
         <div class="bg"></div>
         <div class="logo">
-      			<h1>冷泉家時雨亭文庫</h1>
-      			<h2>公益社団法人</h2>
-      			<h3>The Reizei Family</h3>
+          <a href="/">
+        			<h1>冷泉家時雨亭文庫</h1>
+        			<h2>公益社団法人</h2>
+        			<h3>The Reizei Family</h3>
+      			</a>
   		  </div>
       </header>
     </div>
@@ -421,12 +427,12 @@ $thanksMsg = <<< EOT
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="/assets/js/jquery.easing1.3.js"></script>
-  <script src="/assets/js/jquery.general.responsive.js"></script>
-  <script src="/assets/js/jquery.bxslider.min.js"></script>
-  <script src="/assets/js/jquery.inview.min.js"></script>
-  <script src="/assets/js/jquery.pjax.js"></script>
-  <script src="/assets/js/common.js"></script>  
+  <script src="/assets/js/min/jquery.easing1.3-min.js"></script>
+  <script src="/assets/js/min/jquery.general.responsive-min.js"></script>
+  <script src="/assets/js/min/jquery.bxslider.min.js"></script>
+  <script src="/assets/js/min/jquery.inview.min.js"></script>
+  <script src="/assets/js/min/common-min.js"></script>
+  <script src="/assets/js/min/index-min.js"></script> 
 
 </body>
 </html>
