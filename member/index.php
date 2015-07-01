@@ -37,7 +37,6 @@ $head = <<< EOT
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -76,7 +75,7 @@ $head = <<< EOT
       <div class="lead-txt">
         <h1>冷泉家時雨亭文庫会員</h1>
         <h2 class="en">MEMBERS</h2>
-        <p>当文庫の会員入会をご希望の方は右のフォームよりお問い合わせください。<br>後日、会員登録に関する御案内を郵送させていただきます。</p>
+        <p>当文庫の会員入会をご希望の方は下のフォームよりお問い合わせください。<br>後日、会員登録に関する御案内を郵送させていただきます。</p>
         <ul>
           <li>※お問い合わせ項目はすべて必須事項となります。</li>
           <li>※お問い合わせの際はプライバシーポリシーをご確認ください。</li>
@@ -229,7 +228,6 @@ $postPreview = <<< EOT
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -358,7 +356,6 @@ $thanksMsg = <<< EOT
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
