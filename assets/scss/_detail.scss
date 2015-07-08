@@ -6,7 +6,7 @@ body.permalink{
       }
 
       .body{
-        @include link-style(#db4d6d, underline, none);
+        @include link-style(#222, underline);
         word-break: break-all;
 
         blockquote{
@@ -74,7 +74,7 @@ body.permalink{
         .foot{
           border-top: dotted 1px #000;
           margin-top: 2em;
-          @include link-style(#000, underline, none);
+          @include link-style(#000, underline);
 
           ul{
             text-align: center;
@@ -134,7 +134,7 @@ body.permalink{
         .foot{
           margin-top: 4em;
           border-top: dotted 1px #000;
-          @include link-style(#666, underline, none);
+          @include link-style(#222, underline);
           .foot-title{
             float: left;
             padding: 30px 0 27px;
@@ -214,7 +214,7 @@ body.permalink{
       .foot{
         border-top: dotted 1px #000;
         margin-top: 40px;
-        @include link-style(#666, underline, none);
+        @include link-style(#666, underline);
         .foot-title{
           float: left;
           padding: 30px 0 27px;

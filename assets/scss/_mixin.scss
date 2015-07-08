@@ -1,26 +1,27 @@
 //value
-$pc-width: 900px;
-@mixin link-style($color, $default:none, $hover:underline){
+@mixin link-style($color, $default:underline){
   a{
     &:link, &:visited{
       color: $color;
-      text-decoration: $default;
+      text-decoration: none;
+      @if underline == $default {
+      border-bottom: 1px solid $color;
+      } @else {
+        border-bottom: none;
+      }
     }
     @include media-desktop {
       &:hover, &:active{
         color: $color;
-        text-decoration: $hover;
+        text-decoration: none;
+        @if none == $default {
+        border-bottom: 1px solid $color;
+        } @else {
+        border-bottom: none;
+      }
       }
     }
   }
-}
-
-//colorset
-@mixin colorset-category{
-  &.nisshi{ @include link-style(#e5a51c); color: #e5a51c; }
-  &.oshirase{ @include link-style(#51a8dd); color: #51a8dd; }
-  &.item{ @include link-style(#db4d6d); color: #db4d6d; }
-  &.other{ @include link-style(#000); color: #000; }
 }
 
 // breakpoint
