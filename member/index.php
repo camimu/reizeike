@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 mb_language("Ja") ;
 mb_internal_encoding("UTF-8") ;
@@ -34,7 +34,7 @@ $head = <<< EOT
   <meta name="description" content="財団法人「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に設立されました。">
   <meta name="keywords" content="冷泉家,冷泉,冷泉家時雨亭文庫,時雨亭,和歌">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
 
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
@@ -61,7 +61,7 @@ $head = <<< EOT
       <header>
         <div class="bg"></div>
         <div class="logo">
-          <a href="/">
+          <a href="http://reizeike.jp/">
         			<h1>冷泉家時雨亭文庫</h1>
         			<h2>公益社団法人</h2>
         			<h3>The Reizei Family</h3>
@@ -78,8 +78,7 @@ $head = <<< EOT
         <p>当文庫の会員入会をご希望の方は下のフォームよりお問い合わせください。<br>後日、会員登録に関する御案内を郵送させていただきます。</p>
         <ul>
           <li>※お問い合わせ項目はすべて必須事項となります。</li>
-          <li>※お問い合わせの際はプライバシーポリシーをご確認ください。</li>
-          <li>※その他お問い合わせはこちらへ。</li>
+          <li>※本フォームより入力いただいた情報は、当文庫で責任を持って管理し、当文庫からの御連絡ため以外には使用いたしません。</li>
         </ul>
       </div>
 
@@ -225,7 +224,7 @@ $postPreview = <<< EOT
   <meta name="description" content="財団法人「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に設立されました。">
   <meta name="keywords" content="冷泉家,冷泉,冷泉家時雨亭文庫,時雨亭,和歌">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
 
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
@@ -252,7 +251,7 @@ $postPreview = <<< EOT
       <header>
         <div class="bg"></div>
         <div class="logo">
-          <a href="/">
+          <a href="http://reizeike.jp/">
         			<h1>冷泉家時雨亭文庫</h1>
         			<h2>公益社団法人</h2>
         			<h3>The Reizei Family</h3>
@@ -353,7 +352,7 @@ $thanksMsg = <<< EOT
   <meta name="description" content="財団法人「冷泉家時雨亭文庫」は、冷泉家に伝わる貴重な文化遺産を、将来にわたり総合的かつ恒久的に継承保存していくことを目的に設立されました。">
   <meta name="keywords" content="冷泉家,冷泉,冷泉家時雨亭文庫,時雨亭,和歌">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
 
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
@@ -381,7 +380,7 @@ $thanksMsg = <<< EOT
       <header>
         <div class="bg"></div>
         <div class="logo">
-          <a href="/">
+          <a href="http://reizeike.jp/">
         			<h1>冷泉家時雨亭文庫</h1>
         			<h2>公益社団法人</h2>
         			<h3>The Reizei Family</h3>
@@ -394,10 +393,10 @@ $thanksMsg = <<< EOT
 
       <div class="lead-txt">
         <h1>お申し込みありがとうございました。</h1>
-        <p>お申し込みを受け付けました。本フォームより入力いただいた情報は、<br>当文庫で責任を持って管理し、会員様への御連絡等のために利用させていただきます。<br>御案内お届けまで、今しばらくお待ちくださいませ。</p>
+        <p>お申し込みを受け付けました。本フォームより入力いただいた情報は、<br>当文庫で責任を持って管理し、当文庫からの御連絡のため以外には使用いたしません。<br>御案内お届けまで、今しばらくお待ちくださいませ。</p>
 
         <div class="btn-section">
-          <a href="/">トップページに戻る</a>
+          <a href="http://reizeike.jp/">トップページに戻る</a>
         </div>
       </div>
 
@@ -448,7 +447,7 @@ switch($mode){
 		break;
 	case "post":
 		if($bClear && $_POST['sendmsg']){
-			$mailto="member@reizeike.jp,kamimura@unit-base.com";
+			$mailto="member@reizeike.jp";
 //			$mailto="kamimura@unit-base.com";
 
 			$subject="冷泉家時雨亭文庫会員のお申し込み";
